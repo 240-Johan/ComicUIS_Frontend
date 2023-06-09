@@ -4,7 +4,7 @@ function login() {
     var password = document.getElementById("password").value;
     var nombre = document.getElementById("nombre").value;
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "localhost:8080/usuario/guardar", true);
+    xhr.open("POST", "http://localhost:8080/usuario/guardar", true);
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhr.onreadystatechange = function() {
         if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
